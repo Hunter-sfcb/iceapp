@@ -13,10 +13,10 @@ jobs:
       - name: Checkout 🔥
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install deps ⚙️
         run: npm install
@@ -24,7 +24,7 @@ jobs:
       - name: Build web 🍭
         run: npm run build
 
-      - name: Install Capacitor CLI
+      - name: Install Capacitor + Android
         run: npm install @capacitor/cli @capacitor/android
 
       - name: Copy web to Android
