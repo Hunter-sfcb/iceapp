@@ -1,0 +1,6 @@
+{
+  "appId": "com.hunter.social",
+  "appName": "HunterApp",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
